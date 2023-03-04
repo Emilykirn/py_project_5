@@ -1,0 +1,10 @@
+{% block title %}{{ user }} - Details{% endblock %}
+
+{% block body %}
+<h1>{{ user.user_id }}</h1> 
+    <ul>
+        {% for user in users%}
+            <li>{{ user }}</li> 
+        {% endfor %}
+    </ul>
+{% endblock %}
