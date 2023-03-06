@@ -6,7 +6,7 @@ import crud
 from jinja2 import StrictUndefined
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key_here'
+app.config['SECRET_KEY'] = 'secret'
 app.jinja_env.undefined = StrictUndefined
 
 
