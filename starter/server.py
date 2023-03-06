@@ -66,7 +66,7 @@ def login():
         # Check if the user credentials are valid
         email = request.form['email']
         password = request.form['password']
-        
+
         if email == 'your_email' and password == 'your_password':
             session['email'] = email
             return redirect(url_for('/homepage'))
@@ -74,10 +74,11 @@ def login():
             return render_template('login.html', error='Invalid username or password')
     return render_template('homepage.html')
 
-@app.route('/logout')
+@app.route("/logout")
 def logout():
-    session.pop('email', None)
-    return redirect(url_for('login'))
+   del session["username"]
+   flash("Logged out.")
+   return redirect("/login")
 
 
 if __name__ == "__main__":
