@@ -3,8 +3,10 @@
 {% block body %}
 <h1>{{ user.user_id }}</h1> 
     <ul>
-        {% for user in users%}
-            <li>{{ user }}</li> 
+        {% for rating in user.ratings%}
+            <li>{{ rating.score }}</li> 
+            <li>{{ rating.movie.title }}</li>
         {% endfor %}
+       
     </ul>
 {% endblock %}
