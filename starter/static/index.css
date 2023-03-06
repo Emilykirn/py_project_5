@@ -1,0 +1,10 @@
+body{
+    background-image: url("https://www.refin-ceramic-tiles.com/file/600x600xcropped/articoli/feel/FEEL_SAGE_MATT_120X120_01.jpg?_gl=1*1c6xj6f*_up*MQ..*_ga*MTc4NTY0ODI0Ny4xNjc4MTI2Mzk2*_ga_SNY3CT04G0*MTY3ODEyNjM5My4xLjEuMTY3ODEyNjQwMC4wLjAuMA..");
+
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+a {
+    color: white;
+}
